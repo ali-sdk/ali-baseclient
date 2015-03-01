@@ -1,0 +1,47 @@
+{
+  "name": "ali-baseclient",
+  "version": "0.0.0",
+  "description": "ali-baseclient",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "mocha --check-leaks -R spec -t 5000 test/*.test.js",
+    "test-cov": "node node_modules/.bin/istanbul cover node_modules/.bin/_mocha -- --check-leaks -t 5000 test/*.test.js",
+    "test-travis": "node node_modules/.bin/istanbul cover node_modules/.bin/_mocha --report lcovonly -- --check-leaks -t 5000 test/*.test.js",
+    "jshint": "jshint .",
+    "autod": "autod -w --prefix '~'",
+    "cnpm": "npm install --registry=https://registry.npm.taobao.org",
+    "contributors": "contributors -f plain -o AUTHORS"
+  },
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "autod": "*",
+    "contributors": "*",
+    "jshint": "*",
+    "istanbul-harmony": "*",
+    "mocha": "*"
+  },
+  "homepage": "https://github.com/ali-sdk/ali-baseclient",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ali-sdk/ali-baseclient.git",
+    "web": "https://github.com/ali-sdk/ali-baseclient"
+  },
+  "bugs": {
+    "url": "https://github.com/ali-sdk/ali-baseclient/issues",
+    "email": "m@fengmk2.com"
+  },
+  "keywords": [
+    "ali-baseclient"
+  ],
+  "engines": {
+    "node": ">=0.11.14",
+    "iojs": ">=1.0.0"
+  },
+  "author": "fengmk2 <m@fengmk2.com> (http://fengmk2.com)",
+  "license": "MIT"
+}
